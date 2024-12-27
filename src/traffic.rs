@@ -7,8 +7,8 @@ use objc::{msg_send, sel, sel_impl};
 use rand::{distributions::Alphanumeric, Rng};
 use tauri::{Emitter, Runtime, Window};
 
-const WINDOW_CONTROL_PAD_X: f64 = 12.0;
-const WINDOW_CONTROL_PAD_Y: f64 = 16.0;
+const WINDOW_CONTROL_PAD_X: f64 = 16.0;
+const WINDOW_CONTROL_PAD_Y: f64 = 30.0;
 
 pub struct UnsafeWindowHandle(pub *mut std::ffi::c_void);
 unsafe impl Send for UnsafeWindowHandle {}
